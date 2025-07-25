@@ -18,7 +18,9 @@
     <script>
       WebViewer({
         path: 'lib/', 
-        initialDoc: 'sample-local-pdf.pdf' 
+        initialDoc: 'sample-local-pdf.pdf',
+        enableRedaction: true,
+        fullAPI: true,
       }, document.getElementById('viewer'))
       .then(instance => {
         // WebViewer is ready
