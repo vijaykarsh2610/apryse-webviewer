@@ -3,7 +3,7 @@
   <head>
     <title>Apryse WebViewer in SharePoint</title>
     <meta charset="utf-8" />
-    <script src="https://raw.githubusercontent.com/vijaykarsh2610/apryse-webviewer/refs/heads/main/webviewer.min.js"></script> 
+    <script src="lib/webviewer.min.js"></script> 
     <style>
       html, body, #viewer {
         margin: 0;
@@ -17,8 +17,8 @@
     <div id="viewer"></div>
     <script>
       WebViewer({
-        path: 'https://github.com/vijaykarsh2610/apryse-webviewer/tree/main/lib', 
-        initialDoc: 'https://github.com/vijaykarsh2610/apryse-webviewer/blob/main/sample-local-pdf.pdf' 
+        path: 'lib/', 
+        initialDoc: 'sample-local-pdf.pdf' 
       }, document.getElementById('viewer'))
       .then(instance => {
         // WebViewer is ready
